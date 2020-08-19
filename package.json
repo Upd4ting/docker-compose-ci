@@ -1,0 +1,11 @@
+{
+  "name": "docker-compose-ci",
+  "version": "1.0.0",
+  "repository": "https://github.com/Upd4ting/docker-compose-ci.git",
+  "author": "Antony Rizzitelli <contact@vulksoft.be>",
+  "license": "MIT",
+  "scripts": {
+    "build": "docker build -t vulksoft/docker-compose-ci .",
+    "push": "docker push vulksoft/docker-compose-ci"
+  }
+}

@@ -1,0 +1,6 @@
+FROM docker:latest
+
+RUN apk add yarn curl
+RUN yarn global add npx
+
+COPY --from=docker/compose:1.25.0-alpine /usr/local/bin/docker-compose /usr/local/bin/
